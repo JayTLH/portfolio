@@ -1,0 +1,16 @@
+@import "../../styles/base.scss";
+
+.divider {
+  width: calc(288vw / 3.2);
+  height: 1px;
+  margin: 0 auto 40px auto;
+  background: $silver;
+
+  @include tablet-view() {
+    width: calc(620vw / 7.68);
+  }
+
+  @include laptop-view() {
+    width: 840px;
+  }
+}

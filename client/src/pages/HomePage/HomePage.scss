@@ -1,5 +1,12 @@
 @import "../../styles/base.scss";
 
-.home {
+.main {
+  padding: 0 16px;
 
+  @include tablet-view() {
+    padding: 0 24px;
+    box-sizing: content-box;
+    max-width: 1080px;
+    margin: 0 auto;
+  }
 }

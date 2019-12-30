@@ -1,0 +1,36 @@
+@import "../../styles/base.scss";
+
+.nav {
+  width: 100vw;
+  height: 80px;
+  padding: 10px 16px;
+  background: rgba($white, 0.95);
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  z-index: 1;
+
+  @include tablet-view() {
+    padding: 10px 50px;
+  }
+
+  &__logo {
+    width: 60px;
+    height: 60px;
+  }
+
+  &__burger {
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+}
+
+.burger {
+  width: 320px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background: $black;
+}

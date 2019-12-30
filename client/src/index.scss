@@ -1,0 +1,23 @@
+@import "./styles/base.scss";
+@import url('https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700&display=swap'); // Oswald font
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "Oswald", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #7c7c7c;
+  border-radius: 1px;
+}
