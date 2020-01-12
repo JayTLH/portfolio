@@ -2,8 +2,8 @@
 
 .nav {
   width: 100vw;
-  height: 80px;
-  padding: 10px 16px;
+  height: 72px;
+  padding: 6px 16px 0 16px;
   background: rgba($white, 0.95);
   display: flex;
   justify-content: space-between;
@@ -17,18 +17,23 @@
   &__logo {
     width: 60px;
     height: 60px;
+    cursor: pointer;
   }
 
   &__burger {
     background: none;
     border: none;
     cursor: pointer;
+
+    @include tablet-view() {
+      display: none;
+    }
   }
 }
 
 .burger {
   width: 320px;
-  height: 100vh;
+  height: 72px;
   position: fixed;
   top: 0;
   right: 0;

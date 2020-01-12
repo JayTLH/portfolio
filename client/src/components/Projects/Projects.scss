@@ -6,6 +6,7 @@
   align-items: center;
 
   &__title {
+    font-weight: 300;
     margin: 0 0 50px 0;
     align-self: flex-start;
   }
@@ -38,6 +39,7 @@
   }
 
   &__description {
+    font-weight: 300;
     margin: 0;
   }
 

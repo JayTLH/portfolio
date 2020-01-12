@@ -5,6 +5,7 @@ import React from "react";
 import Nav from "../../components/Nav";
 import Hero from "../../components/Hero";
 import Projects from "../../components/Projects";
+import Contact from "../../components/Contact";
 import Divider from "../../components/Divider";
 
 // styles & assets
@@ -19,6 +20,7 @@ export default function HomePage(props) {
         <Divider />
         <Projects />
         <Divider />
+        <Contact />
       </div>
     </>
   )

@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 // styles & assets
 import "./Nav.scss";
-import logo from "../../styles/assets/logos/jaytlh.png";
+import logo from "../../styles/assets/logos/jh.png";
 import burger from "../../styles/assets/icons/icon-burger.svg";
 
 export default function Nav(props) {
@@ -15,16 +15,14 @@ export default function Nav(props) {
   }
 
   return (
-    <>
-      <nav className="nav">
-        <Link to="/">
-          <img className="nav__logo" src={logo} alt="logo" />
-        </Link>
-        <button className="nav__burger" onClick={toggleBurger}>
-          <img className="nav__burger-img" src={burger} alt="burger" />
-        </button>
-        {burMenu ? <div className="burger"></div> : null}
-      </nav>
-    </>
+    <nav className="nav">
+      <Link to="/">
+        <img className="nav__logo" src={logo} alt="logo" />
+      </Link>
+      <button className="nav__burger" onClick={toggleBurger}>
+        <img className="nav__burger-img" src={burger} alt="burger" />
+      </button>
+      {burMenu ? <div className="burger"></div> : null}
+    </nav>
   )
 }

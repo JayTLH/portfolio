@@ -11,31 +11,43 @@
   }
 
   &__text {
-    margin: 250px 0 0 0;
+    margin: 250px 0 80px 0;
+
+    @include tablet-view() {
+      margin: 250px 0 120px 0;
+    }
   }
 
   &__name {
-    margin: 0;
     font-size: 32px;
     font-weight: 300;
+    margin: 0;
   }
 
   &__title {
-    margin: 10px 0 0 0;
     font-size: 20px;
     font-weight: 300;
+    margin: 0;
   }
 
   &__slogan {
     font-size: 20px;
-    font-weight: 300;
+    font-weight: 100;
+    margin: 60px 0 0 0;
+
+    &--bolder {
+      font-weight: 400;
+    }
   }
 
   &__image {
     height: 288px;
     object-fit: contain;
+    margin: 65px 0;
+    display: none;
 
     @include tablet-view() {
+      display: inline;
       align-self: flex-end;
     }
   }
