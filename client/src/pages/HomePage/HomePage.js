@@ -4,6 +4,7 @@ import React from "react";
 // components
 import Nav from "../../components/Nav";
 import Hero from "../../components/Hero";
+import About from "../../components/About";
 import Projects from "../../components/Projects";
 import Contact from "../../components/Contact";
 import Divider from "../../components/Divider";
@@ -17,6 +18,8 @@ export default function HomePage(props) {
       <Nav />
       <div className="main">
         <Hero />
+        <Divider />
+        <About />
         <Divider />
         <Projects />
         <Divider />

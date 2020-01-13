@@ -1,5 +1,18 @@
 @import "../../styles/base.scss";
 
 .contact {
+  margin: 0 0 40px 0;
 
+  &__title {
+    font-weight: 300;
+  }
+
+  &__text {
+    font-weight: 300;
+  }
+
+  &__link-img {
+    width: 50px;
+    height: 50px;
+  }
 }
