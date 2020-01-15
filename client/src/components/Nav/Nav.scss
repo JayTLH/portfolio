@@ -2,16 +2,21 @@
 
 .nav {
   width: 100vw;
-  height: 72px;
-  padding: 6px 16px 0 16px;
-  background: rgba($white, 0.95);
+  height: 80px;
+  padding: 0 16px;
+  background: rgba($white, 0.98);
   display: flex;
   justify-content: space-between;
+  align-items: center;
   position: fixed;
   z-index: 1;
 
   @include tablet-view() {
-    padding: 10px 50px;
+    padding: 0 24px;
+  }
+
+  @include laptop-view() {
+    padding: 0 180px;
   }
 
   &__logo {
@@ -25,9 +30,29 @@
     border: none;
     cursor: pointer;
 
+
+    display: none; // hold up
+
+
     @include tablet-view() {
       display: none;
     }
+  }
+
+  &__list {
+    display: flex;
+    list-style: none;
+  }
+
+  &__list-button {
+    font-family: inherit;
+    font-weight: 300;
+    font-size: 16px;
+    background: none;
+    border: none;
+    margin: 0 0 0 35px;
+    cursor: pointer;
+    outline: none;
   }
 }
 

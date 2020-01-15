@@ -22,13 +22,18 @@
       display: flex;
       justify-content: space-between;
     }
+
+    @include laptop-view() {
+      width: 800px;
+    }
   }
 
   &__image {
     width: 288px;
+    object-fit: cover;
 
     @include tablet-view() {
-      width: 400px;
+      width: 450px;
     }
   }
 
