@@ -16,7 +16,7 @@ export default function HomePage(props) {
   return (
     <>
       <Nav />
-      <div className="main">
+      <div className="home">
         <Hero />
         <Divider />
         <About />
