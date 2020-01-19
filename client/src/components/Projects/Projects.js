@@ -15,7 +15,7 @@ export default function Projects(props) {
       alt: "liquorish homepage",
       description: "A catalog of cocktails that lets you to  search, filter, favorite, and upload personalized recipes. You can check pricing, ingredients, and instructions on how to mix your own drink.",
       stack: "React, Node.js, Express.js, Multer, MongoDB",
-      href: "https://github.com/JayTLH/liquorish"
+      link: "https://github.com/JayTLH/liquorish"
     },
     {
       name: "Greatest Piano",
