@@ -6,10 +6,15 @@
   padding: 0 16px;
   background: rgba($white, 0.98);
   display: flex;
-  justify-content: space-between;
   align-items: center;
   position: fixed;
   z-index: 1;
+
+  justify-content: center; // work in progress for burger menu
+
+  @include tablet-view() {
+    justify-content: space-between;
+  }
 
   @include tablet-view() {
     padding: 0 24px;
@@ -30,9 +35,7 @@
     border: none;
     cursor: pointer;
 
-
-    display: none; // hold up
-
+    display: none; // hold up work in progress
 
     @include tablet-view() {
       display: none;
@@ -40,8 +43,13 @@
   }
 
   &__list {
-    display: flex;
     list-style: none;
+    
+    display: none; // hold up work in progress
+
+    @include tablet-view() {
+      display: flex;
+    }
   }
 
   &__list-button {

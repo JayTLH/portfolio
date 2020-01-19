@@ -16,10 +16,10 @@ export default function Contact(props) {
       <div className="contact__info">
         <p className="contact__text">You can reach me through email or find me using the links below!</p>
         <div className="contact__logos">
-          <a className="contact__link" href={resume} target="_blank" rel="noopener noreferrer"><img className="contact__link-img" src={resumeLogo} alt="resume logo" /></a>
-          <a className="contact__link" href="mailto:jasontlhuang@jaytlh.com?subject=Hi%20Jason!"><img className="contact__link-img" src={email} alt="email logo" /></a>
-          <a className="contact__link" href="https://github.com/JayTLH" target="_blank" rel="noopener noreferrer"><img className="contact__link-img" src={github} alt="github logo" /></a>
-          <a className="contact__link" href="https://www.linkedin.com/in/jason-tlh/" target="_blank" rel="noopener noreferrer"><img className="contact__link-img" src={linkedin} alt="linkedin logo" /></a>
+          <a className="contact__link--one" href={resume} target="_blank" rel="noopener noreferrer"><img className="contact__link-img" src={resumeLogo} alt="resume logo" /></a>
+          <a className="contact__link--two" href="mailto:jasontlhuang@jaytlh.com?subject=Hi%20Jason!"><img className="contact__link-img" src={email} alt="email logo" /></a>
+          <a className="contact__link--three" href="https://github.com/JayTLH" target="_blank" rel="noopener noreferrer"><img className="contact__link-img" src={github} alt="github logo" /></a>
+          <a className="contact__link--four" href="https://www.linkedin.com/in/jason-tlh/" target="_blank" rel="noopener noreferrer"><img className="contact__link-img" src={linkedin} alt="linkedin logo" /></a>
         </div>
       </div>
     </div>
