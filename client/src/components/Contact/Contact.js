@@ -22,6 +22,7 @@ export default function Contact(props) {
           <a className="contact__link--four" href="https://www.linkedin.com/in/jason-tlh/" target="_blank" rel="noopener noreferrer"><img className="contact__link-img" src={linkedin} alt="linkedin logo" /></a>
         </div>
       </div>
+      <p className="copyright">© Jason Huang 2020</p>
     </div>
   )
 }
