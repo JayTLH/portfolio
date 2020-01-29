@@ -1,0 +1,25 @@
+@import "../../styles/base.scss";
+
+.contact {
+  margin: 0 0 40px 0;
+  display: flex;
+  flex-direction: column;
+
+  &__title {
+    font-weight: 300;
+  }
+
+  &__text {
+    font-weight: 300;
+  }
+
+  &__link-img {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+.copyright {
+  font-weight: 300;
+  align-self: center;
+}
