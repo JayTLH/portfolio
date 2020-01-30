@@ -1,21 +1,9 @@
-// import React from "react"
-// import { Link } from "gatsby"
-
-// import SEO from "../components/seo"
-
-// export default function Home() {
-//   return (
-//     <>
-//       <SEO title="Home" />
-//       hello world
-//     </>
-//   )
-// }
-
 // packages
 import React from "react";
+import Helmet from "react-helmet";
 
 // components
+// import SEO from "../components/seo"
 import Nav from "../components/Nav";
 import Hero from "../components/Hero";
 import About from "../components/About";
@@ -29,6 +17,8 @@ import "./index.scss";
 export default function HomePage(props) {
   return (
     <>
+      <Helmet title="JayTLH" />
+      {/* <SEO /> */}
       <Nav />
       <div className="home">
         <Hero />

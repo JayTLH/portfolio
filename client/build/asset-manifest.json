@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/static/css/main.12c31892.chunk.css",
+    "main.js": "/static/js/main.29aae66a.chunk.js",
+    "main.js.map": "/static/js/main.29aae66a.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.1d8d433c.js",
+    "runtime-main.js.map": "/static/js/runtime-main.1d8d433c.js.map",
+    "static/js/2.5410ea85.chunk.js": "/static/js/2.5410ea85.chunk.js",
+    "static/js/2.5410ea85.chunk.js.map": "/static/js/2.5410ea85.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.63fe48aed3616c81e16c72880d47ace6.js": "/precache-manifest.63fe48aed3616c81e16c72880d47ace6.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.12c31892.chunk.css.map": "/static/css/main.12c31892.chunk.css.map",
+    "static/js/2.5410ea85.chunk.js.LICENSE": "/static/js/2.5410ea85.chunk.js.LICENSE",
+    "static/media/d20.png": "/static/media/d20.e24791cf.png",
+    "static/media/github.png": "/static/media/github.1fd07176.png",
+    "static/media/github.svg": "/static/media/github.617870e4.svg",
+    "static/media/greatest-piano.png": "/static/media/greatest-piano.bb485be6.png",
+    "static/media/icon-burger.svg": "/static/media/icon-burger.2a4d5f09.svg",
+    "static/media/linkedin.png": "/static/media/linkedin.1ad769f2.png",
+    "static/media/liquorish-home.png": "/static/media/liquorish-home.9d3f99c5.png",
+    "static/media/smoke-dragon-0.png": "/static/media/smoke-dragon-0.c1229b78.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.1d8d433c.js",
+    "static/js/2.5410ea85.chunk.js",
+    "static/css/main.12c31892.chunk.css",
+    "static/js/main.29aae66a.chunk.js"
+  ]
+}
