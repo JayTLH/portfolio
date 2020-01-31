@@ -3,7 +3,7 @@ import React from "react";
 
 // styles & assets
 import "./Contact.scss";
-import resume from "../../styles/assets/jason-tsz-lik-huang-resume.pdf";
+import resume from "../../styles/assets/jason-huang-resume.pdf";
 import resumeLogo from "../../styles/assets/icons/resume.png";
 import email from "../../styles/assets/icons/email.png";
 import github from "../../styles/assets/icons/github.png";
