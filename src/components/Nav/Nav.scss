@@ -1,0 +1,53 @@
+@import "../../styles/base.scss";
+
+.nav {
+  width: 100vw;
+  height: 80px;
+  padding: 0 16px;
+  background: rgba($white, 0.98);
+  display: flex;
+  align-items: center;
+  position: fixed;
+  z-index: 1;
+
+  justify-content: center; // work in progress for burger menu
+
+  @include tablet-view() {
+    justify-content: space-between;
+  }
+
+  @include tablet-view() {
+    padding: 0 24px;
+  }
+
+  @include laptop-view() {
+    padding: 0 180px;
+  }
+
+  &__logo {
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+  }
+
+  &__list {
+    list-style: none;
+    
+    display: none; // hold up work in progress
+
+    @include tablet-view() {
+      display: flex;
+    }
+  }
+
+  &__list-button {
+    font-family: inherit;
+    font-weight: 300;
+    font-size: 16px;
+    background: none;
+    border: none;
+    margin: 0 0 0 35px;
+    cursor: pointer;
+    outline: none;
+  }
+}
