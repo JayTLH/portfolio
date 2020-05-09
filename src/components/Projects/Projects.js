@@ -10,14 +10,14 @@ export default class Projects extends Component {
   projects = () => {
     return (
       [
-        {
-          name: "Sudoku",
-          image: liquorishHome,
-          alt: "sudoku page",
-          description: "placeholder",
-          stack: "React",
-          link: "https://github.com/JayTLH/sudoku"
-        },
+        // {
+        //   name: "Sudoku",
+        //   image: liquorishHome,
+        //   alt: "sudoku page",
+        //   description: "placeholder",
+        //   stack: "React",
+        //   link: "https://github.com/JayTLH/sudoku"
+        // },
         {
           name: "Liquorish",
           image: liquorishHome,
