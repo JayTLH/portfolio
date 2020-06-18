@@ -42,6 +42,10 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
+    @include laptop-view() {
+      width: 350px;
+    }
   }
 
   &__name {
@@ -54,7 +58,8 @@
     margin: 0 0 10px 0;
   }
 
-  &__github-icon {
+  &__link-icon {
     width: 36px;
+    margin: 0 10px 0 0;
   }
 }

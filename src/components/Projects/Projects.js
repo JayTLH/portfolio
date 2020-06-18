@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 
 import "./Projects.scss";
+import newTab from "../../styles/assets/icons/newTab.png";
 import github from "../../styles/assets/icons/github.svg";
 import sudoku from "../../styles/assets/images/sudoku.png";
 import liquorishHome from "../../styles/assets/images/liquorish-home.png";
@@ -16,7 +17,8 @@ export default class Projects extends Component {
           alt: "sudoku page",
           description: "A Sudoku game that can play on four different difficulties and can provide the solution when prompt. It uses a backtracking algorithm to efficiently solve any grid.",
           stack: "React",
-          link: "https://github.com/JayTLH/sudoku"
+          repo: "https://github.com/JayTLH/sudoku",
+          link: "https://sudoku-jay.netlify.app/"
         },
         {
           name: "Liquorish",
@@ -24,7 +26,7 @@ export default class Projects extends Component {
           alt: "liquorish homepage",
           description: "A catalog of cocktails that lets you to  search, filter, favorite, and upload personalized recipes. You can check the ingredients and instructions on how to mix your own drink.",
           stack: "React, Node.js, Express.js, Multer, MongoDB",
-          link: "https://github.com/JayTLH/liquorish"
+          repo: "https://github.com/JayTLH/liquorish"
         },
         {
           name: "Greatest Piano",
@@ -32,7 +34,7 @@ export default class Projects extends Component {
           alt: "greatest piano homepage",
           description: "A piano web app that lets you play, record and playback!",
           stack: "React, Node.js, Express.js, Tone.js",
-          link: "https://github.com/JayTLH/pair-programming-jv"
+          repo: "https://github.com/JayTLH/pair-programming-jv"
         }
       ]
     )
@@ -44,7 +46,7 @@ export default class Projects extends Component {
         <h1 className="projects__title">Projects</h1>
 
         {this.projects().map((project, index) => {
-          let { name, image, alt, description, stack, link } = project
+          let { name, image, alt, description, stack, repo, link } = project
 
           if (index % 2 === 0) {
             return (
@@ -56,9 +58,15 @@ export default class Projects extends Component {
                     <p className="projects__description">{description}<br />Stack: {stack}</p>
                   </div>
                   <div className="projects__links">
-                    <a className="projects__github" href={link} target="_blank" rel="noopener noreferrer">
-                      <img className="projects__github-icon" src={github} alt="github link to greatest piano repository" />
+                    <a className="projects__link" href={repo} target="_blank" rel="noopener noreferrer">
+                      <img className="projects__link-icon" src={github} alt="github link" />
                     </a>
+                    {link ?
+                      <a className="projects__link" href={repo} target="_blank" rel="noopener noreferrer">
+                        <img className="projects__link-icon" src={newTab} alt="link to website" />
+                      </a> :
+                      null
+                    }
                   </div>
                 </div>
               </div>
@@ -72,9 +80,15 @@ export default class Projects extends Component {
                   <p className="projects__description">{description}<br />Stack: {stack}</p>
                 </div>
                 <div className="projects__links">
-                  <a className="projects__github" href={link} target="_blank" rel="noopener noreferrer">
-                    <img className="projects__github-icon" src={github} alt="github link to greatest piano repository" />
+                  <a className="projects__link" href={repo} target="_blank" rel="noopener noreferrer">
+                    <img className="projects__link-icon" src={github} alt="github link" />
                   </a>
+                  {link ?
+                    <a className="projects__link" href={repo} target="_blank" rel="noopener noreferrer">
+                      <img className="projects__link-icon" src={newTab} alt="link to website" />
+                    </a> :
+                    null
+                  }
                 </div>
               </div>
               <img className="projects__image" src={image} alt={alt} />
