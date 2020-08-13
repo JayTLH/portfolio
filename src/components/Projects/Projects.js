@@ -1,16 +1,25 @@
-import React, { Component } from "react";
-
-import "./Projects.scss";
-import newTab from "../../styles/assets/icons/newTab.png";
-import github from "../../styles/assets/icons/github.svg";
-import sudoku from "../../styles/assets/images/sudoku.png";
-import liquorishHome from "../../styles/assets/images/liquorish-home.png";
-import greatestPiano from "../../styles/assets/images/greatest-piano.png";
+import React, { Component } from 'react';
+import './Projects.scss';
+import newTab from '../../styles/assets/icons/newTab.png';
+import github from '../../styles/assets/icons/github.svg';
+import pathfinder from '../../styles/assets/images/pathfinder.png';
+import sudoku from '../../styles/assets/images/sudoku.png';
+import liquorishHome from '../../styles/assets/images/liquorish-home.png';
+import greatestPiano from '../../styles/assets/images/greatest-piano.png';
 
 export default class Projects extends Component {
   projects = () => {
     return (
       [
+        {
+          name:'Pathfinder',
+          image: pathfinder,
+          alt: 'pathfinder page',
+          description: 'A simple web app that uses a pathfinder algorithm to determine the shortest path from point A to B.',
+          stack: 'React, Redux',
+          repo: 'https://github.com/JayTLH/pathfinder',
+          link: 'https://pathfinder-jay.netlify.app/'
+        },
         {
           name: "Sudoku",
           image: sudoku,
@@ -55,7 +64,7 @@ export default class Projects extends Component {
                 <div className="projects__info">
                   <div className="projects__text">
                     <h2 className="projects__name">{name}</h2>
-                    <p className="projects__description">{description}<br />Stack: {stack}</p>
+                    <p className="projects__description">{description}<br /><span className="projects__stack">Stack: </span>{stack}</p>
                   </div>
                   <div className="projects__links">
                     <a className="projects__link" href={repo} target="_blank" rel="noopener noreferrer">
@@ -77,7 +86,7 @@ export default class Projects extends Component {
               <div className="projects__info">
                 <div className="projects__text">
                   <h2 className="projects__name">{name}</h2>
-                  <p className="projects__description">{description}<br />Stack: {stack}</p>
+                  <p className="projects__description">{description}<br /><span className="projects__stack">Stack: </span>{stack}</p>
                 </div>
                 <div className="projects__links">
                   <a className="projects__link" href={repo} target="_blank" rel="noopener noreferrer">
