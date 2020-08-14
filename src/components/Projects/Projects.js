@@ -71,7 +71,7 @@ export default class Projects extends Component {
                       <img className="projects__link-icon" src={github} alt="github link" />
                     </a>
                     {link ?
-                      <a className="projects__link" href={repo} target="_blank" rel="noopener noreferrer">
+                      <a className="projects__link" href={link} target="_blank" rel="noopener noreferrer">
                         <img className="projects__link-icon" src={newTab} alt="link to website" />
                       </a> :
                       null
@@ -93,7 +93,7 @@ export default class Projects extends Component {
                     <img className="projects__link-icon" src={github} alt="github link" />
                   </a>
                   {link ?
-                    <a className="projects__link" href={repo} target="_blank" rel="noopener noreferrer">
+                    <a className="projects__link" href={link} target="_blank" rel="noopener noreferrer">
                       <img className="projects__link-icon" src={newTab} alt="link to website" />
                     </a> :
                     null
